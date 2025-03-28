@@ -11,33 +11,32 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
-}
-
-/* Heading styling */
-h1 {
-    margin-top: 20px;
+    padding: 20px;
     text-align: center;
 }
 
-/* Paragraph styling */
+/* Make heading and paragraph visible */
+h1 {
+    margin-bottom: 10px;
+}
+
 p {
     margin-bottom: 20px;
 }
 
 /* Container for Tableau dashboard */
 .dashboard-container {
-    width: 90%; /* Makes it responsive */
-    max-width: 1200px; /* Prevents it from being too large */
-    height: 75vh; /* Adjust height based on viewport */
+    width: 90%;  /* Makes it responsive */
+    max-width: 1400px; /* Prevents it from being too large */
+    height: 85vh; /* Makes it tall enough to avoid scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Ensuring iframe fits well */
+/* Ensuring iframe fills the container properly */
 .dashboard-container iframe {
     width: 100%;
     height: 100%;

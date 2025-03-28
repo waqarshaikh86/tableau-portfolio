@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tableau Portfolio</title>
     <style>
-        /* Remove extra margins, padding, and prevent scrolling */
+        /* Remove all margins, padding, and scroll bars */
         * {
             margin: 0;
             padding: 0;
@@ -14,10 +14,18 @@
         html, body {
             height: 100%;
             width: 100%;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-        body {
+            overflow: hidden; /* Prevents both horizontal & vertical scroll */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+        }
+        iframe {
+            width: 90vw;
+            height: 80vh;
+            border: none;
+            max-width: 1200px;
         }
     </style>
 </head>
@@ -27,10 +35,7 @@
     <p>Here are some of my Tableau dashboards:</p>
 
     <iframe 
-        src="https://public.tableau.com/views/CallCenterDashboardRWFD_17119622038700/OverviewLM?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop" 
-        width="90%" 
-        height="750" 
-        style="border: none; max-width: 1200px;">
+        src="https://public.tableau.com/views/CallCenterDashboardRWFD_17119622038700/OverviewLM?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop">
     </iframe>
 
 </body>

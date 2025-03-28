@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tableau Portfolio</title>
     <style>
-        /* Remove extra margins, padding, and prevent scrolling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-            width: 100%;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
         body {
             text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden; /* Prevents horizontal scroll */
+        }
+        h1 {
+            margin-bottom: 10px; /* Adds space below main heading */
+        }
+        p {
+            margin-bottom: 20px; /* Adds space below paragraph */
+        }
+        .dashboard-container {
+            margin-bottom: 40px; /* Space between dashboards */
+        }
+        iframe {
+            width: 90%;
+            height: 750px;
+            border: none;
+            max-width: 1200px;
         }
     </style>
 </head>
@@ -26,12 +42,19 @@
     <h1>Welcome to My Tableau Portfolio</h1>
     <p>Here are some of my Tableau dashboards:</p>
 
-    <iframe 
-        src="https://public.tableau.com/views/CallCenterDashboardRWFD_17119622038700/OverviewLM?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop" 
-        width="90%" 
-        height="1600" 
-        style="border: none; max-width: 1600px;">
-    </iframe>
+    <div class="dashboard-container">
+        <h2>Call Center Dashboard</h2>
+        <iframe 
+            src="https://public.tableau.com/views/CallCenterDashboardRWFD_17119622038700/OverviewLM?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop">
+        </iframe>
+    </div>
+
+    <div class="dashboard-container">
+        <h2>Retail Transactions Dashboard</h2>
+        <iframe 
+            src="https://public.tableau.com/views/RetailTransactionsDashboardRWFD_17228060231600/RT?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop">
+        </iframe>
+    </div>
 
 </body>
 </html>

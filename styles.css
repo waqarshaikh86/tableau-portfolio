@@ -1,21 +1,33 @@
+/* Center the entire page content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* Centering the iframe container */
 .dashboard-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    aspect-ratio: 16 / 9; /* Keeps aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    margin-top: 20px; /* Space between heading and iframe */
 }
 
-/* Controlling iframe size */
-.dashboard-wrapper {
-    width: 90%;
-    max-width: 1200px;
-}
-
-/* Making the iframe responsive */
-.dashboard-wrapper iframe {
+/* Making the iframe fully fit */
+.dashboard-container iframe {
     width: 100%;
-    height: 700px;
+    height: 100%;
     border: none;
 }

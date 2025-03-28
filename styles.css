@@ -1,0 +1,21 @@
+/* Centering the iframe container */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Controlling iframe size */
+.dashboard-wrapper {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Making the iframe responsive */
+.dashboard-wrapper iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}

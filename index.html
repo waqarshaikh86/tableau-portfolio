@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tableau Portfolio</title>
+    <style>
+        /* Remove extra margins, padding, and prevent scrolling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
-<body style="text-align: center;">
+<body>
 
     <h1>Welcome to My Tableau Portfolio</h1>
     <p>Here are some of my Tableau dashboards:</p>
 
     <iframe 
         src="https://public.tableau.com/views/CallCenterDashboardRWFD_17119622038700/OverviewLM?:showVizHome=no&:embed=true&:toolbar=bottom&:device=desktop" 
-        width="80%" 
-        height="1000" 
-        style="border: none;">
+        width="90%" 
+        height="750" 
+        style="border: none; max-width: 1200px;">
     </iframe>
 
 </body>
